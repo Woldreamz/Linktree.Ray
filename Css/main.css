@@ -10,9 +10,10 @@ h1, h2, h3, .poppins {
 }
 
 :root {
-    --bg-color: ;
+    --bg-color: #000;
     --text-color: #fff;
     --secondary-color: #ae8957;
+    --font-color: #8A2BE2;
 
     --big-font: 6.6rem;
     --p-font: 1rem;
@@ -40,3 +41,84 @@ body {
     flex-direction: column;
     z-index: -2;
 }
+
+.backgroundImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {    
+    text-align: center;
+    gap: 14px;
+}
+
+body, 
+header,
+main,
+.backgroundImg {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-bottom: 8px;
+}
+
+header mark {
+    border-radius: 4px;
+    padding: 4px 8px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+header h1 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+header p {
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+
+main {
+    gap: 14px;
+}
+
+.link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    border:  1px solid #334155;
+    border-radius: 8px;
+    width: 420px;
+    max-width: 100%;
+    margin: 0 auto;
+    transition-duration: 200ms;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover {
+    border: skyblue;    
+}
+
+.linkBackground {
+    position: absolute;
+    inset: 0;
+    background: var(--bg-color);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.link p {
+    font-size: 0.8rem;
+}
+
